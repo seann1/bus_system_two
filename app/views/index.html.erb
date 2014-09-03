@@ -1,0 +1,24 @@
+<h1>Here are the current bus lines:</h1>
+
+<ul>
+
+  <%@lines.each do |line| %>
+  <li><%= link_to "#{line.name}", line_path(line) %></li>
+  <% end %>
+
+</ul>
+
+<h1>Here are the current bus stations:</h1>
+
+<ul>
+
+  <%@stations.each do |station| %>
+  <li><%= link_to "#{station.name}", station_path(station) %></li>
+  <% end %>
+
+</ul>
+
+
+<p><%= link_to "New Line", new_line_path, :class => "btn btn-default" %></p>
+
+<p><%= link_to "New Station", new_station_path, :class => "btn btn-default" %></p>
