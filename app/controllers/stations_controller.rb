@@ -1,4 +1,5 @@
 class StationsController < ApplicationController
+  before_filter :authorize, only: [:edit, :update]
 
   def index
     @stations = Station.all

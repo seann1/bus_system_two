@@ -1,4 +1,5 @@
 class LinesController < ApplicationController
+  before_filter :authorize, only: [:edit, :update]
 
   def index
     @lines = Line.all
