@@ -17,7 +17,7 @@ class LinesController < ApplicationController
     @line = Line.create(line_params)
     if @line.valid?
       flash[:notice] = "This line has been added"
-      redirect_to lines_path
+      redirect_to root_path
     else
       render 'new'
     end

@@ -18,8 +18,4 @@ class SessionsController < ApplicationController
     redirect_to root_url, notice: "Logged out!"
   end
 
-  private
-    def session_params
-      params.require(:password).permit(:password)
-    end
 end
