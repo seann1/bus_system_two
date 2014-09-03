@@ -1,4 +1,4 @@
 The app is online at: 
-http://bus-system-tracker.herokuapp.com/
+http://bus-system-tracker.herokuapp.com
 
 
